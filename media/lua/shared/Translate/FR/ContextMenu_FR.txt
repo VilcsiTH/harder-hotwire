@@ -1,3 +1,0 @@
-ContextMenu_FR = {
-	ContextMenu_VehicleHotwireSkill = "Il vous faut les clés ou<br>Électricité niveau 4 et<br>Mécanique niveau 6<br>pour démarrer avec les fils",
-}
