@@ -1,5 +1,5 @@
 # Refined Hotwire
-[![Steam Workshop]](https://steamcommunity.com/sharedfiles/filedetails/?id=2687515849)
+[Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=2687515849)
 
 Project Zomboid mod that makes unhotwiring cars possible. Forked from rez's repository, it aims to change back the requirements to vanilla standards while still retaining the amazing car key creation feature. Because sometimes, you just want to drive that sweet red sports car in your solo run.
 
