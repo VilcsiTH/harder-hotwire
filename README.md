@@ -1,10 +1,9 @@
 # Refined Hotwire
 [![Steam Workshop](steam.svg)](https://steamcommunity.com/sharedfiles/filedetails/?id=2164926937)
 
-Project Zomboid mod that makes unhotwiring cars possible.
+Project Zomboid mod that makes unhotwiring cars possible. Forked from rez's repository, it aims to change back the requirements to vanilla standards while still retaining the amazing car key creation feature. Because sometimes, you just want to drive that sweet red sports car in your solo run.
 
 ## Description
-This mod is mostly useful for multiplayer when cars are enabled.  
 The mod has an ability to revert damage done to hotwired cars and even craft a key if your skill is high enough.
 
 ### Compatibility
@@ -25,7 +24,7 @@ Same as vanilla.
 * Mechanics: 3;
 * Time: 900.
 
-Increased requirements. Player is expected to be able to revert the damage done to electrical circuits.
+Player is expected to be able to revert the damage done to electrical circuits.
 
 ### Craft Car Key
 * Metalworking: 3;
@@ -36,5 +35,5 @@ Increased requirements. Player is expected to be able to revert the damage done 
 Player needs to be able to make keys from something after all.
 
 ## Links and Copyrights
-Development repository on GitHub: https://github.com/openzomboid/harder-hotwire
+Original development repository on GitHub: https://github.com/openzomboid/harder-hotwire
 License: GPL-3.0 (see LICENSE file).
