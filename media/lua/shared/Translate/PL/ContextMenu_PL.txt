@@ -1,3 +1,0 @@
-ContextMenu_PL = {
-	ContextMenu_VehicleHotwireSkill = "Potrzebujesz kluczyków lub<br>Elektryki na poz. 4 i<br>Naprawy samochodów na poz. 6<br>, aby odpaliæ na krótko.",
-}
