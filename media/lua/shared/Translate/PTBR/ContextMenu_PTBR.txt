@@ -1,3 +1,0 @@
-ContextMenu_PTBR = {
-	ContextMenu_VehicleHotwireSkill = "Você precisa das chaves ou<br>Elétrica nível 4 e<br>Mecânica nível 6<br>para uma ligação direta.",
-}
