@@ -1,3 +1,0 @@
-﻿ContextMenu_JP = {
-	ContextMenu_VehicleHotwireSkill = "車両キーが無い状態で<br>エンジンを始動させるには<br>電気技師レベル4と<br>車両整備レベル6が<br>必要です。",
-}
