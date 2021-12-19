@@ -1,3 +1,0 @@
-ContextMenu_TR = {
-	ContextMenu_VehicleHotwireSkill = "Düz kontak yapmak için<br>anahtara veya<br>Elektrikçilik Seviye 4 ve<br>Tamircilik Seviye 6'ye<br>ihtiyacýnýz var.",
-}
