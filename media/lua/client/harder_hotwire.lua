@@ -18,10 +18,8 @@
 
 local hotwire_electrical = 1;
 local hotwire_mechanics = 2;
-local hotwire_metalworking = 0;
 local unhotwire_electrical = 2;
 local unhotwire_mechanics = 3;
-local unhotwire_metalworking = 0;
 local key_electrical = 1;
 local key_mechanics = 2;
 local key_metalworking = 3;
@@ -91,8 +89,7 @@ function harder_hotwire_showRadialMenu(playerObj)
 			if vehicle:isHotwired() then
 				-- un-hotwire
 				if playerObj:getPerkLevel(Perks.Electricity) >= unhotwire_electrical and
-					playerObj:getPerkLevel(Perks.Mechanics) >= unhotwire_mechanics and
-					playerObj:getPerkLevel(Perks.MetalWelding) >= unhotwire_metalworking then
+					playerObj:getPerkLevel(Perks.Mechanics) >= unhotwire_mechanics then
 						menu:addSlice(getText("ContextMenu_VehicleUnhotwire"), getTexture("media/ui/vehicles/vehicle_ignitionON.png"), onUnHotwire, playerObj);
 				else
 					menu:addSlice(getText("ContextMenu_VehicleUnhotwireSkill"), getTexture("media/ui/vehicles/vehicle_ignitionOFF.png"), nil, playerObj);
@@ -100,8 +97,7 @@ function harder_hotwire_showRadialMenu(playerObj)
 			else
 				-- hotwire
 				if playerObj:getPerkLevel(Perks.Electricity) >= hotwire_electrical and
-					playerObj:getPerkLevel(Perks.Mechanics) >= hotwire_mechanics and
-					playerObj:getPerkLevel(Perks.MetalWelding) >= hotwire_metalworking then
+					playerObj:getPerkLevel(Perks.Mechanics) >= hotwire_mechanics then
 						menu:addSlice(getText("ContextMenu_VehicleHotwire"), getTexture("media/ui/vehicles/vehicle_ignitionON.png"), ISVehicleMenu.onHotwire, playerObj);
 				else
 					menu:addSlice(getText("ContextMenu_VehicleHotwireSkill"), getTexture("media/ui/vehicles/vehicle_ignitionOFF.png"), nil, playerObj);
