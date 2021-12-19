@@ -16,15 +16,15 @@
 	Base game functions are copyrighted to The Indie Stone.
 ]]--
 
-local hotwire_electrical = 4;
-local hotwire_mechanics = 6;
-local hotwire_metalworking = 1;
-local unhotwire_electrical = 6;
-local unhotwire_mechanics = 8;
-local unhotwire_metalworking = 4;
-local key_electrical = 10;
-local key_mechanics = 10;
-local key_metalworking = 8;
+local hotwire_electrical = 1;
+local hotwire_mechanics = 2;
+local hotwire_metalworking = 0;
+local unhotwire_electrical = 2;
+local unhotwire_mechanics = 3;
+local unhotwire_metalworking = 0;
+local key_electrical = 1;
+local key_mechanics = 2;
+local key_metalworking = 3;
 
 
 function onUnHotwire(playerObj)
