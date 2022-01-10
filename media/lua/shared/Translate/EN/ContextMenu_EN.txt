@@ -1,8 +1,8 @@
 -- Translation: rez
 -- Steam: http://steamcommunity.com/profiles/76561198071681605
+-- Modified: ShadowSWilliam
 
 ContextMenu_EN = {
-	ContextMenu_VehicleHotwireSkill = "You need <br>Electrical level 1 and<br>Mechanics level 2 <br>to hotwire",
 	ContextMenu_VehicleUnhotwire = "Un-hotwire Engine",
 	ContextMenu_VehicleUnhotwireSkill = "You need <br>Electrical level 2 and<br>Mechanics level 3 <br>to un-hotwire",
 	ContextMenu_VehicleGetKey = "Craft Car Key",

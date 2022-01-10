@@ -1,6 +1,8 @@
 -- author: rez
--- version: 0.2 (2020-07-13)
+-- version: 0.2-1 (2022-01-10)
 -- based on: 40.43
+-- modified: ShadowSWilliam
+-- for: 41.65
 
 require "TimedActions/ISBaseTimedAction"
 
@@ -35,6 +37,6 @@ function unhotwire:new(character)
 	setmetatable(o, self)
 	self.__index = self
 	o.character = character
-	o.maxTime = 900 - (character:getPerkLevel(Perks.Electricity) * 10);
+	o.maxTime = 500 - (character:getPerkLevel(Perks.Electricity) * 8);
 	return o
 end
