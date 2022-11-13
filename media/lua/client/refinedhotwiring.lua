@@ -35,9 +35,9 @@ function ISVehicleMenu.showRadialMenu(playerObj)
 					-- un-hotwire
 					if playerObj:getPerkLevel(Perks.Electricity) >= SandboxVars.RefinedHotwiring.UnhotwireElectrical and
 						playerObj:getPerkLevel(Perks.Mechanics) >= SandboxVars.RefinedHotwiring.UnhotwireMechanics then
-							menu:addSlice(getText("ContextMenu_VehicleUnhotwire", SandboxVars.RefinedHotwiring.UnhotwireElectrical, SandboxVars.RefinedHotwiring.UnhotwireMechanics), getTexture("media/ui/vehicles/vehicle_ignitionON.png"), onUnHotwire, playerObj);
+							menu:addSlice(getText("ContextMenu_VehicleUnhotwire"), getTexture("media/ui/vehicles/vehicle_ignitionON.png"), onUnHotwire, playerObj);
 					else
-						menu:addSlice(getText("ContextMenu_VehicleUnhotwireSkill"), getTexture("media/ui/vehicles/vehicle_ignitionOFF.png"), nil, playerObj);
+						menu:addSlice(getText("ContextMenu_VehicleUnhotwireSkill", SandboxVars.RefinedHotwiring.UnhotwireElectrical, SandboxVars.RefinedHotwiring.UnhotwireMechanics), getTexture("media/ui/vehicles/vehicle_ignitionOFF.png"), nil, playerObj);
 					end
 				else
 					-- get key
