@@ -35,7 +35,7 @@ function ISVehicleMenu.showRadialMenu(playerObj)
 					-- un-hotwire
 					if playerObj:getPerkLevel(Perks.Electricity) >= SandboxVars.RefinedHotwiring.UnhotwireElectrical and
 						playerObj:getPerkLevel(Perks.Mechanics) >= SandboxVars.RefinedHotwiring.UnhotwireMechanics then
-							menu:addSlice(getText("ContextMenu_VehicleUnhotwire"), getTexture("media/ui/vehicles/vehicle_ignitionON.png"), onUnHotwire, playerObj);
+							menu:addSlice(getText("ContextMenu_VehicleUnhotwire", SandboxVars.RefinedHotwiring.UnhotwireElectrical, SandboxVars.RefinedHotwiring.UnhotwireMechanics), getTexture("media/ui/vehicles/vehicle_ignitionON.png"), onUnHotwire, playerObj);
 					else
 						menu:addSlice(getText("ContextMenu_VehicleUnhotwireSkill"), getTexture("media/ui/vehicles/vehicle_ignitionOFF.png"), nil, playerObj);
 					end
@@ -46,7 +46,7 @@ function ISVehicleMenu.showRadialMenu(playerObj)
 						playerObj:getPerkLevel(Perks.MetalWelding) >= SandboxVars.RefinedHotwiring.KeyMetalworking then
 							menu:addSlice(getText("ContextMenu_VehicleGetKey"), getTexture("media/ui/vehicles/vehicle_add_key.png"), onGetKey, playerObj);
 					else
-						menu:addSlice(getText("ContextMenu_VehicleGetKeySkill"), getTexture("media/ui/vehicles/vehicle_add_key_fail.png"), nil, playerObj);
+						menu:addSlice(getText("ContextMenu_VehicleGetKeySkill", SandboxVars.RefinedHotwiring.KeyElectrical, SandboxVars.RefinedHotwiring.KeyMechanics, SandboxVars.RefinedHotwiring.KeyMetalworking), getTexture("media/ui/vehicles/vehicle_add_key_fail.png"), nil, playerObj);
 					end
 				end
 		end

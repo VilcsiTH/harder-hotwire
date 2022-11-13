@@ -4,7 +4,7 @@
 
 ContextMenu_EN = {
 	ContextMenu_VehicleUnhotwire = "Un-hotwire Engine",
-	ContextMenu_VehicleUnhotwireSkill = "You need <br>Electrical level 2 and<br>Mechanics level 3 <br>to un-hotwire",
+	ContextMenu_VehicleUnhotwireSkill = "You need <br>Electrical level %1 and<br>Mechanics level %2 <br>to un-hotwire",
 	ContextMenu_VehicleGetKey = "Craft Car Key",
-	ContextMenu_VehicleGetKeySkill = "You need <br>Electrical level 1 and<br>Mechanics level 2 and<br>Metalworking level 3<br>to craft car key",
+	ContextMenu_VehicleGetKeySkill = "You need <br>Electrical level %1 and<br>Mechanics level %2 and<br>Metalworking level %3<br>to craft car key",
 }
