@@ -1,9 +1,3 @@
-local unhotwire_electrical = 2;
-local unhotwire_mechanics = 3;
-local key_electrical = 1;
-local key_mechanics = 2;
-local key_metalworking = 3;
-
 function onUnHotwire(playerObj)
 	ISTimedActionQueue.add(unhotwire:new(playerObj));
 end
@@ -39,17 +33,17 @@ function ISVehicleMenu.showRadialMenu(playerObj)
 			not playerObj:getInventory():haveThisKeyId(vehicle:getKeyId()) then
 				if vehicle:isHotwired() then
 					-- un-hotwire
-					if playerObj:getPerkLevel(Perks.Electricity) >= unhotwire_electrical and
-						playerObj:getPerkLevel(Perks.Mechanics) >= unhotwire_mechanics then
+					if playerObj:getPerkLevel(Perks.Electricity) >= SandboxVars.RefinedHotwiring.UnhotwireElectrical and
+						playerObj:getPerkLevel(Perks.Mechanics) >= SandboxVars.RefinedHotwiring.UnhotwireMechanics then
 							menu:addSlice(getText("ContextMenu_VehicleUnhotwire"), getTexture("media/ui/vehicles/vehicle_ignitionON.png"), onUnHotwire, playerObj);
 					else
 						menu:addSlice(getText("ContextMenu_VehicleUnhotwireSkill"), getTexture("media/ui/vehicles/vehicle_ignitionOFF.png"), nil, playerObj);
 					end
 				else
 					-- get key
-					if playerObj:getPerkLevel(Perks.Electricity) >= key_electrical and
-						playerObj:getPerkLevel(Perks.Mechanics) >= key_mechanics and
-						playerObj:getPerkLevel(Perks.MetalWelding) >= key_metalworking then
+					if playerObj:getPerkLevel(Perks.Electricity) >= SandboxVars.RefinedHotwiring.KeyElectrical and
+						playerObj:getPerkLevel(Perks.Mechanics) >= SandboxVars.RefinedHotwiring.KeyMechanics and
+						playerObj:getPerkLevel(Perks.MetalWelding) >= SandboxVars.RefinedHotwiring.KeyMetalworking then
 							menu:addSlice(getText("ContextMenu_VehicleGetKey"), getTexture("media/ui/vehicles/vehicle_add_key.png"), onGetKey, playerObj);
 					else
 						menu:addSlice(getText("ContextMenu_VehicleGetKeySkill"), getTexture("media/ui/vehicles/vehicle_add_key_fail.png"), nil, playerObj);

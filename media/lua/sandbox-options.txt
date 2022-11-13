@@ -1,0 +1,51 @@
+VERSION = 1,
+
+option RefinedHotwiring.UnhotwireElectrical
+{
+    type = integer,
+    min = 0,
+    default = 2,
+    max = 10,
+    page = RefinedHotwiring,
+    translation = RefinedHotwiring_UnhotwireElectrical,
+}
+
+option RefinedHotwiring.UnhotwireMechanics
+{
+    type = integer,
+    min = 0,
+    default = 3,
+    max = 10,
+    page = RefinedHotwiring,
+    translation = RefinedHotwiring_UnhotwireMechanics,
+}
+
+option RefinedHotwiring.KeyElectrical
+{
+    type = integer,
+    min = 0,
+    default = 1,
+    max = 10,
+    page = RefinedHotwiring,
+    translation = RefinedHotwiring_KeyElectrical,
+}
+
+option RefinedHotwiring.KeyMechanics
+{
+    type = integer,
+    min = 0,
+    default = 2,
+    max = 10,
+    page = RefinedHotwiring,
+    translation = RefinedHotwiring_KeyMechanics,
+}
+
+option RefinedHotwiring.KeyMetalworking
+{
+    type = integer,
+    min = 0,
+    default = 3,
+    max = 10,
+    page = RefinedHotwiring,
+    translation = RefinedHotwiring_KeyMetalworking,
+}
