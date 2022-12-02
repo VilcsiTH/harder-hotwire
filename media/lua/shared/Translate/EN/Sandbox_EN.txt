@@ -1,0 +1,10 @@
+Sandbox_EN = {
+    Sandbox_RefinedHotwiring = "Refined Hotwiring",
+
+    Sandbox_RefinedHotwiring_UnhotwireElectrical = "Unhotwire: Electrical Skill Needed",
+    Sandbox_RefinedHotwiring_UnhotwireMechanics = "Unhotwire: Mechanics Skill Needed",
+
+    Sandbox_RefinedHotwiring_KeyElectrical = "Key crafting: Electrical Skill Needed",
+    Sandbox_RefinedHotwiring_KeyMechanics = "Key crafting: Mechanic Skill Needed",
+    Sandbox_RefinedHotwiring_KeyMetalworking = "Key crafting: Metalworking Skill Needed",
+}
